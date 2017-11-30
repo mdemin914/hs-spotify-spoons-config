@@ -163,7 +163,7 @@ function module.start()
   menubar:setIcon("./extensions/layout.pdf")
   menubar:setMenu(menuitems)
 
-  module.restoreLayout()
+  -- module.restoreLayout()
 end
 
 return module

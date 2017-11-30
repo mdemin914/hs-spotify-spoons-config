@@ -29,13 +29,17 @@ function module.start()
 
   local menubar = menubar.new()
   module.menubar = menubar
+
+  menuitems = {
+    { title = "Next", fn = hs.spotify.next },
+    { title = "Play / Pause", fn = hs.spotify.playpause },
+    { title = "Prev", fn = hs.spotify.previous },
+  }
+
+  menubar:setMenu(menuitems)
+
   module.showSong()
 
-end
-
-function wait(seconds)
-  local start = os.time()
-  repeat until os.time() > start + seconds
 end
 
 return module
