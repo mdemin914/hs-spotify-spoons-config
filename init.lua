@@ -6,6 +6,7 @@ local log = logger.new("init")
 
 local screenlayout = require "extensions.screenlayout"
 local spotifysong = require "extensions.spotifysong"
+local appwatcher = require "extensions.appwatcher"
 
 local modalmgr = hs.loadSpoon('ModalMgr')
 local countDown = hs.loadSpoon('CountDown')
@@ -18,7 +19,17 @@ local clipHistory = hs.loadSpoon('TextClipboardHistory')
 screenlayout.start()
 clipHistory:start()
 spotifysong.start()
+appwatcher.start()
 
+--
+-- App Watcher
+--
+hs.hotkey.bind({"ctrl-shift"}, "Z", function ()
+  appwatcher.activate()
+end)
+--
+-- Layout
+--
 hs.hotkey.bind({"cmd", "ctrl", "alt"}, "R", function ()
   hs.notify.new({title="Hammerspoon", informativeText="Restoring Windows"}):send()
   screenlayout.restoreLayout()
@@ -28,6 +39,7 @@ hs.hotkey.bind({"cmd", "ctrl", "alt"}, "S", function ()
   hs.notify.new({title="Hammerspoon", informativeText="Saving Windows"}):send()
   screenlayout.saveLayout()
 end)
+
 --
 -- Spotify
 --

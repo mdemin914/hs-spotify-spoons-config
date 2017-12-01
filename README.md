@@ -5,9 +5,13 @@
   - http://www.hammerspoon.org/
 - git clone https://github.com/mdemin914/hs-spotify-spoons-config.git ~/.hammerspoon
 - Hammerspoon Icon -> Reload config
-- all the shortcuts are in the ./hammerspoon/init.lua file
+- all the shortcuts are in the ~/.hammerspoon/init.lua file
 
 ## Features
+### Quick Window Switch
+Toggle between the last used apps
+- (ctrl, shift) + z
+
 ### Spotify
 Top Menu that shows the current playing song and artist with Next, Pause / Play, Previous buttons
 - Next Song
