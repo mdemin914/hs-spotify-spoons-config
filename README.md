@@ -4,9 +4,8 @@
 - install hammerspoon
   - http://www.hammerspoon.org/
 - git clone https://github.com/mdemin914/hs-spotify-spoons-config.git ~/.hammerspoon
-- copy stuff from repo into .hammerspoon
-- reload config
-- all the shortcuts are in the init.lua file
+- Hammerspoon Icon -> Reload config
+- all the shortcuts are in the ./hammerspoon/init.lua file
 
 ## Features
 ### Spotify
