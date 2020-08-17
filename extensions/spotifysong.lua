@@ -11,9 +11,9 @@ function module.showSong()
   local track = spotify.getCurrentTrack()
   local artist = spotify.getCurrentArtist()
 
-  module.menubar:setTitle(track .. ' - ' .. artist)    
+  -- module.menubar:setTitle(track .. ' - ' .. artist)    
 
-  timer.doEvery(5, module.setMenuBarTitle)
+  -- timer.doEvery(5, module.setMenuBarTitle)
 
 end
 
@@ -21,7 +21,7 @@ function module.setMenuBarTitle()
 
   local tempTrack = spotify.getCurrentTrack()
   local tempArtist = spotify.getCurrentArtist()
-  module.menubar:setTitle(tempTrack .. ' - ' .. tempArtist)    
+  -- module.menubar:setTitle(tempTrack .. ' - ' .. tempArtist)    
 
 end
 

@@ -14,7 +14,7 @@ local hcalendar = hs.loadSpoon('HCalendar')
 local clipShow = hs.loadSpoon('ClipShow')
 -- local cc = hs.loadSpoon('CircleClock')
 local ksheet = hs.loadSpoon('KSheet')
-local clipHistory = hs.loadSpoon('TextClipboardHistory')
+local clipHistory = hs.loadSpoon('ClipboardTool')
 
 screenlayout.start()
 clipHistory:start()
